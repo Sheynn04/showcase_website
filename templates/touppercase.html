@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Uppercase</title>
+</head>
+<style>
+    body 
+    {
+    background-color: #1f1a1c;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #f7d9e3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    } 
+    h1 
+    {
+    font-size: 50px;
+    color: palevioletred; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 8px rgba(255, 159, 178, 0.4);
+    margin-top: 40px;
+    }
+</style>
+<body>
+    <h1>Convert String to Uppercase</h1>
+
+    <form action="/toUpperCase" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString">
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if result %}
+    <p>Converted string: {{ result }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Uppercase</title>
+</head>
+<style>
+    body 
+    {
+    background-color: #1f1a1c;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #f7d9e3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    } 
+    h1 
+    {
+    font-size: 50px;
+    color: palevioletred; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 8px rgba(255, 159, 178, 0.4);
+    margin-top: 40px;
+    }
+</style>
+<body>
+    <h1>Get the Area of a Circle</h1>
+
+    <form action="/areaofCircle" method="post">
+        <label for="diameter">Enter the diameter of a circle:<br></label><br><br>
+        <input type="number" id="diameter" name="diameter" step="0.01" required><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if result %}
+    <p>Area of the circle: {{ result }}</p>
+    {% endif %}
+</body>
+</html>

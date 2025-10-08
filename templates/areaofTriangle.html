@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Uppercase</title>
+</head>
+<style>
+    body 
+    {
+    background-color: #1f1a1c;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #f7d9e3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    } 
+    h1 
+    {
+    font-size: 50px;
+    color: palevioletred; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 8px rgba(255, 159, 178, 0.4);
+    margin-top: 40px;
+    }
+</style>
+<body>
+    <h1>Get the Area of a triangle</h1>
+
+    <form action="/areaofTriangle" method="post">
+        <label for="base">Enter the base of the triangle:<br></label><br>
+        <input type="number" id="base" name="base" step="0.01" required><br><br>
+
+        <label for="height">Enter the height of the triangle:<br></label><br>
+        <input type="number" id="height" name="height" step="0.01" required><br> <br>       
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if result %}
+    <p>Area of the circle: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
