@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Postfix Converter</title>
+    <style>
+        body 
+        {
+            background-color: #1f1a1c;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            color: #f7d9e3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        } 
+        h1 
+        {
+            font-size: 50px;
+            color: palevioletred; 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 0 0 8px rgba(255, 159, 178, 0.4);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Infix to Postfix Converter</h1>
+    
+    <form action="/infixToPostfix" method="POST">
+        <input type="text" name="infixExpression" placeholder="Enter infix expression" required>
+        <br><br>
+        <button type="submit">Convert to Postfix</button>
+    </form>
+
+    {% if result %}
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
